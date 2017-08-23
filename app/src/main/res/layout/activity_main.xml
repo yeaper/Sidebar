@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yyp.sidebar.MainActivity"
+    android:background="@color/grey">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.yyp.sidebar.widget.SideBar
+        android:id="@+id/main_sidebar"
+        android:layout_width="26dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:id="@+id/main_show_select_letter"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="80dp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/oval_bg"
+        android:visibility="gone"/>
+
+</RelativeLayout>
