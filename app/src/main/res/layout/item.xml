@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:id="@+id/item">
+    <TextView
+        android:id="@+id/item_sort_letter"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/oval_grey_bg"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -30,10 +42,4 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"/>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#e7e7e7"
-        android:layout_alignParentBottom="true"/>
-</RelativeLayout>
+</LinearLayout>

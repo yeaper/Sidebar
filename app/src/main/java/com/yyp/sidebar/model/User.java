@@ -1,30 +1,22 @@
 package com.yyp.sidebar.model;
 
-/**
- * Created by yyp on 2017/8/23.
- */
+
 public class User {
-    private String avatar;
-    private String name;
+  
+    private String name;   //显示的数据  
+    private String sortLetters;  //显示数据拼音的首字母
 
-    public User(String avatar, String name) {
-        this.avatar = avatar;
-        this.name = name;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
+      
+    public String getName() {  
+        return name;  
+    }  
+    public void setName(String name) {  
+        this.name = name;  
+    }  
+    public String getSortLetters() {  
+        return sortLetters;  
+    }  
+    public void setSortLetters(String sortLetters) {  
+        this.sortLetters = sortLetters;  
+    }  
+}  
